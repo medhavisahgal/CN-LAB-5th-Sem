@@ -3,7 +3,7 @@
 void printBytes(unsigned int num)
 {
     unsigned char *bytePtr = (unsigned char *)&num;
-    for (int i = 0; i < sizeof(num); i++)
+    for (unsigned int i = 0; i < sizeof(num); i++)
     {
         printf("Byte %d: 0x%02x\n", i, bytePtr[i]);
     }
